@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#071018">
+<title>JOIN TELEGRAM</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1335736391773428');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1335736391773428&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root{
+  --bg:#071018;
+  --bg2:#0c1724;
+  --card:#0f1c2a;
+  --line:rgba(124,247,199,.16);
+  --text:#eef6ff;
+  --muted:rgba(238,246,255,.66);
+  --accent:#7cf7c7;
+  --accent2:#ffb347;
+  --shadow:0 16px 60px rgba(0,0,0,.28);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(124,247,199,.16), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(255,179,71,.12), transparent 24%),
+    linear-gradient(180deg,var(--bg) 0%, #050b11 100%);
+  color:var(--text);
+}
+
+.wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+
+.card{
+  width:100%;
+  max-width:420px;
+  background:linear-gradient(180deg, rgba(15,28,42,.96), rgba(10,18,28,.96));
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:22px 18px 18px;
+  box-shadow:var(--shadow);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  color:var(--accent);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.badge::before{
+  content:"";
+  width:8px;height:8px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 18px rgba(124,247,199,.8);
+}
+
+h1{
+  font-size:30px;
+  line-height:1.05;
+  margin-top:14px;
+  letter-spacing:-.03em;
+}
+
+p{
+  margin-top:10px;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:15px;
+}
+
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  margin-top:18px;
+  min-height:58px;
+  border-radius:16px;
+  text-decoration:none;
+  color:#08111a;
+  background:linear-gradient(135deg,var(--accent) 0%, #b8ffe7 48%, var(--accent2) 100%);
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:0 14px 34px rgba(124,247,199,.18);
+  border:none;
+  touch-action:manipulation;
+}
+
+.btn:active{transform:scale(.99)}
+
+.meta{
+  margin-top:14px;
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.stats{
+  margin-top:16px;
+  border-top:1px solid rgba(255,255,255,.06);
+  padding-top:14px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.stat{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:16px;
+  padding:12px;
+}
+
+.stat span{
+  display:block;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.stat strong{
+  display:block;
+  margin-top:7px;
+  font-size:24px;
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="card">
+    <div class="badge">    LIVE</div>
+    <h1>JOIN TELEGRAM</h1>
+    <p>JOIN TELEGRAM FOR LIVE SURESHOT</p>
+
+    <a
+      class="btn"
+      href="https://t.me/+jysRGM838XBiOTRl"
+      target="_self"
+      rel="noopener"
+      id="joinBtn"
+      onclick="handleJoin(event)"
+    >JOIN TELEGRAM</a>
+
+ 
+
+</div>
+
+<script>
+function sendAnalyticsEvent(type, extra = {}) {
+  try {
+    const endpoint = `${location.pathname}?event=${encodeURIComponent(type)}`;
+    const payload = new URLSearchParams({
+      page: location.pathname,
+      target: extra.target || '',
+      result: extra.result || '',
+      ts: String(Date.now())
+    });
+
+    if (navigator.sendBeacon && type === 'visit') {
+      navigator.sendBeacon(endpoint, payload);
+      return;
+    }
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: payload.toString(),
+      keepalive: true
+    }).catch(() => {});
+  } catch (err) {}
+}
+
+function handleJoin(e) {
+  const link = e.currentTarget;
+
+  sendAnalyticsEvent('join_click', {
+    target: link.href,
+    result: 'telegram_redirect'
+  });
+
+  if (typeof fbq === 'function') {
+    fbq('track', 'Contact');
+  }
+}
+
+sendAnalyticsEvent('visit', {
+  result: 'page_view'
+});
+</script>
+</body>
+</html>
